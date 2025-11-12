@@ -1,0 +1,461 @@
+.products {
+  padding-top: 229px;
+  background-color: $second__dark__cyan;
+
+  &__container {
+    width: 100%;
+    gap: 50px;
+    @include df-row-between-center;
+  }
+  &__top-box {
+    @include df-column-center-center;
+  }
+  &__top-first-title {
+    font-family: "Montserrat";
+    text-align: center;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 28px;
+    letter-spacing: 15%;
+    color: $white;
+    margin-bottom: 5px;
+  }
+
+  &__top-second-title {
+    font-family: "Montserrat";
+    text-align: center;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: $white;
+    margin-bottom: 15px;
+  }
+
+  &__top-text {
+    width: 608px;
+    font-family: "Montserrat";
+    text-align: center;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    color: $white__light;
+  }
+
+  &__bottom-box {
+    width: 100%;
+    @include df-row-between-center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  &__bottom-boxes {
+    color: $white;
+    padding: 18px 24px 30px 24px;
+    width: 327px;
+    @include df-column-center-center;
+    background-color: $black;
+    border: 3.12 solid#1b1b1b;
+    transition: 200ms ease all;
+    cursor: pointer;
+    &:hover {
+      color: $third__dark__cyan;
+      background-color: #c1c1c1;
+      transition: 200ms ease all;
+      border: 3.12 solid#DCDCDC;
+    }
+  }
+
+  &__bottom-stars-box {
+    @include df-column-center-start;
+    gap: 8px;
+    margin-right: auto;
+    margin-bottom: 25px;
+  }
+
+  &__bottom-stars-text {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: 0%;
+  }
+
+  &__bottom-stars-imges {
+  }
+
+  &__bottom-car-image {
+    width: 253px;
+    height: 117px;
+  }
+
+  &__bottom-price-texts {
+    transform: translateY(-10px);
+    z-index: 2;
+    background-color: $light__yellow;
+    color: $black;
+    padding: 17px 18px;
+    border-radius: 5px;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    border: 1px solid $black;
+    margin-left: auto;
+    margin-bottom: 27px;
+  }
+
+  &__bottom-titles {
+    margin-right: auto;
+    margin-bottom: 55px;
+    font-family: "Russo One";
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 20px;
+    letter-spacing: 0%;
+  }
+
+  &__bottom-mini-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: start;
+    gap: 34px;
+  }
+  &__bottom-mini-boxes {
+    @include df-column-center-start;
+    gap: 12px;
+  }
+
+  &__bottom-mini-boxes-titles {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #666666;
+  }
+
+  &__bottom-mini-boxes-texts {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: $white;
+  }
+}
+@media (max-width: 1024px) {
+   .products {
+    padding-top: 105px;
+    @include df-column-center-center;
+    background-color: $second__dark__cyan;
+
+    &__container {
+      gap: 85px;
+      padding-right: 24px;
+      padding-left: 24px;
+      padding-bottom: 24px;
+      @include df-column-center-center;
+    }
+
+    &__top-box {
+      @include df-column-center-center;
+    }
+
+    &__top-first-title {
+      font-family: "Montserrat";
+      text-align: center;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 28px;
+      letter-spacing: 15%;
+      color: $white;
+      margin-bottom: 5px;
+    }
+
+    &__top-second-title {
+      font-family: "Montserrat";
+      text-align: center;
+      font-weight: 900;
+      font-size: 32px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      color: $white;
+      margin-bottom: 15px;
+    }
+
+    &__top-text {
+      font-family: "Montserrat";
+      text-align: center;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 28px;
+      letter-spacing: 0%;
+      color: $white__light;
+    }
+
+    &__bottom-box {
+      width: 100%;
+      @include df-column-center-center;
+      gap: 32px;
+    }
+
+    &__bottom-boxes {
+      color: $white;
+      padding: 18px 24px 30px 24px;
+      width: 100%;
+      @include df-column-center-center;
+      background-color: $black;
+      border: 3.12 solid#1b1b1b;
+      transition: 200ms ease all;
+      &:active {
+        color: $third__dark__cyan;
+        background-color: #c1c1c1;
+        transition: 200ms ease all;
+        border: 3.12 solid#DCDCDC;
+      }
+    }
+    &__bottom-stars-box {
+      @include df-column-center-start;
+      gap: 8px;
+      margin-right: auto;
+      margin-bottom: 25px;
+    }
+
+    &__bottom-stars-text {
+      font-family: "Roboto";
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 100%;
+      letter-spacing: 0%;
+    }
+
+    &__bottom-stars-imges {
+    }
+
+    &__bottom-car-image {
+      width: 253px;
+      height: 117px;
+    }
+
+    &__bottom-price-texts {
+      transform: translateY(-10px);
+      z-index: 2;
+      background-color: $light__yellow;
+      color: $black;
+      padding: 17px 18px;
+      border-radius: 5px;
+      font-family: "Roboto";
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      border: 1px solid $black;
+      margin-left: auto;
+      margin-bottom: 27px;
+    }
+
+    &__bottom-titles {
+      margin-right: auto;
+      margin-bottom: 34px;
+      font-family: "Russo One";
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 20px;
+      letter-spacing: 0%;
+    }
+
+    &__bottom-mini-box {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: start;
+      align-items: start;
+      gap: 34px;
+    }
+
+    &__bottom-mini-boxes {
+      @include df-column-center-start;
+      gap: 6px;
+    }
+
+    &__bottom-mini-boxes-titles {
+      font-weight: 400;
+      font-size: 9px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      color: #666666;
+    }
+
+    &__bottom-mini-boxes-texts {
+      font-family: "Roboto";
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      color: $white;
+    }
+  }
+}
+
+
+  
+
+
+@media (max-width: 767px) {
+  .products {
+    padding-top: 105px;
+    @include df-column-center-center;
+    background-color: $second__dark__cyan;
+
+    &__container {
+      gap: 85px;
+      padding-right: 24px;
+      padding-left: 24px;
+      padding-bottom: 24px;
+      @include df-column-center-center;
+    }
+
+    &__top-box {
+      @include df-column-center-center;
+    }
+
+    &__top-first-title {
+      font-family: "Montserrat";
+      text-align: center;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 28px;
+      letter-spacing: 15%;
+      color: $white;
+      margin-bottom: 5px;
+    }
+
+    &__top-second-title {
+      font-family: "Montserrat";
+      text-align: center;
+      font-weight: 900;
+      font-size: 32px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      color: $white;
+      margin-bottom: 15px;
+    }
+
+    &__top-text {
+      font-family: "Montserrat";
+      text-align: center;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 28px;
+      letter-spacing: 0%;
+      color: $white__light;
+    }
+
+    &__bottom-box {
+      width: 100%;
+      @include df-column-center-center;
+      gap: 32px;
+    }
+
+    &__bottom-boxes {
+      color: $white;
+      padding: 18px 24px 30px 24px;
+      width: 100%;
+      @include df-column-center-center;
+      background-color: $black;
+      border: 3.12 solid#1b1b1b;
+      transition: 200ms ease all;
+      &:active {
+        color: $third__dark__cyan;
+        background-color: #c1c1c1;
+        transition: 200ms ease all;
+        border: 3.12 solid#DCDCDC;
+      }
+    }
+    &__bottom-stars-box {
+      @include df-column-center-start;
+      gap: 8px;
+      margin-right: auto;
+      margin-bottom: 25px;
+    }
+
+    &__bottom-stars-text {
+      font-family: "Roboto";
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 100%;
+      letter-spacing: 0%;
+    }
+
+    &__bottom-stars-imges {
+    }
+
+    &__bottom-car-image {
+      width: 253px;
+      height: 117px;
+    }
+
+    &__bottom-price-texts {
+      transform: translateY(-10px);
+      z-index: 2;
+      background-color: $light__yellow;
+      color: $black;
+      padding: 17px 18px;
+      border-radius: 5px;
+      font-family: "Roboto";
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      border: 1px solid $black;
+      margin-left: auto;
+      margin-bottom: 27px;
+    }
+
+    &__bottom-titles {
+      margin-right: auto;
+      margin-bottom: 34px;
+      font-family: "Russo One";
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 20px;
+      letter-spacing: 0%;
+    }
+
+    &__bottom-mini-box {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: start;
+      align-items: start;
+      gap: 34px;
+    }
+
+    &__bottom-mini-boxes {
+      @include df-column-center-start;
+      gap: 6px;
+    }
+
+    &__bottom-mini-boxes-titles {
+      font-weight: 400;
+      font-size: 9px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      color: #666666;
+    }
+
+    &__bottom-mini-boxes-texts {
+      font-family: "Roboto";
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      color: $white;
+    }
+  }
+}
